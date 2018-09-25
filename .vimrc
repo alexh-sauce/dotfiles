@@ -15,3 +15,8 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-sensible'
+Plugin 'vim-syntastic/syntastic'
+
+call vundle#end()
+   
+filetype plugin indent on    " required

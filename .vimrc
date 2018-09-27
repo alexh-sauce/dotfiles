@@ -62,5 +62,20 @@ set encoding=utf-8
 
 set number relativenumber
 
+set bg=dark
+set ignorecase
+set smartcase
+set incsearch
+
+set wildmode=longest,list,full
+set wildmenu
+
+set hlsearch
+set laststatus=2
+
+set autowrite                  " automatically write a file when leaving a modified buffer
+
+set lazyredraw          " redraw only when we need to.
+
 let python_highlight_all=1
 syntax on

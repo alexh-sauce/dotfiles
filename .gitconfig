@@ -1,6 +1,7 @@
 [user]
 	email = alex.harford@saucelabs.com
 	name = Alex Harford
+	signingkey = 143A42D3D5ED1D7A334D46236CDDEE27507C4FCB
 [color]
     ui = true
 
@@ -26,3 +27,5 @@
 	ci = commit -v
 [url "git@github.com:saucelabs"]
 	insteadOf = https://github.com/saucelabs
+[commit]
+	gpgsign = true

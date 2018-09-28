@@ -25,6 +25,8 @@
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	ci = commit -v
+	sui = !(git submodule sync --recursive && git submodule update --init --recursive)
+
 [url "git@github.com:saucelabs"]
 	insteadOf = https://github.com/saucelabs
 [commit]

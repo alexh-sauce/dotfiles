@@ -7,7 +7,7 @@
 
 [color "branch"]
     current = yellow reverse
-    local = yello
+    local = yellow
     remote = green
 
 [color "diff"]
@@ -31,3 +31,5 @@
 	insteadOf = https://github.com/saucelabs
 [commit]
 	gpgsign = true
+[push]
+	default = current

@@ -1,0 +1,4 @@
+hardstatus alwayslastline '%{= g}[ %{G}%H %{g}][%= %{= w}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+defscrollback 200000
+
+

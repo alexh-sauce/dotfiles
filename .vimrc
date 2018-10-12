@@ -25,11 +25,20 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'fatih/vim-go'
+Plugin 'jamessan/vim-gnupg'
 
 
 call vundle#end()
 
 filetype plugin indent on    " required
+
+let g:ale_python_auto_pipenv = 1
+let g:ale_fix_on_save = 1
+
+let b:ale_fixers = {
+\ '*': ['remove_trailing_lines', 'trim_whitespace'],
+\ 'python': ['black', 'isort', 'add_blank_lines_for_python_control_statements']
+\}
 
 let g:syntastic_check_on_open = 1 
 " Don’t check when the file is saved

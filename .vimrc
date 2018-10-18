@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-sensible'
 " Plugin 'vim-syntastic/syntastic'
@@ -26,6 +27,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'fatih/vim-go'
 Plugin 'jamessan/vim-gnupg'
+Plugin 'romainl/vim-qf'
 
 
 call vundle#end()
@@ -40,9 +42,9 @@ let b:ale_fixers = {
 \ 'python': ['black', 'isort', 'add_blank_lines_for_python_control_statements']
 \}
 
-let g:syntastic_check_on_open = 1 
+let g:syntastic_check_on_open = 1
 " Don’t check when the file is saved
-let g:syntastic_check_on_wq = 0 
+let g:syntastic_check_on_wq = 0
 
 " Enable folding
 set foldmethod=indent

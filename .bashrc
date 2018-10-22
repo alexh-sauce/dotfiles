@@ -63,6 +63,11 @@ gclone() {
   cd "$(basename "${repo/.git/}")" || return
 }
 
+repoclean() {
+	git clean -dffx
+	git submodule foreach git clean -dffx
+}
+
 qpass() {
   site=$1
 
@@ -83,4 +88,4 @@ techtalk() {
 alias ll="ls -l"
 alias grep='GREP_COLOR="1;37;41" LANG=C grep --color=auto'
 
-source .sauce.env
+source $HOME/.sauce.env
